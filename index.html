@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Demo | TASTE</title>
+    <meta name="description" content="Discover delicious food at TASTE Restaurant.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+    <nav class="navbar">
+
+        <a href="#home" class="logo">TASTE</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-menu" id="navMenu">
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#reservation" class="nav-button">Book a Table</a>
+                <a href="#order" class="nav-order">Order Online</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="hero-content" id="home">
+        <p class="subtitle">FRESH • DELICIOUS • UNFORGETTABLE</p>
+
+        <h1>
+            Great Food.<br>
+            Great Moments.
+        </h1>
+
+        <p class="hero-text">
+            Discover delicious dishes made with fresh ingredients
+            and served with passion.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#menu" class="button primary">View Menu</a>
+            <a href="#reservation" class="button secondary">Book a Table</a>
+        </div>
+    </div>
+</header>
+
+
+<!-- ================= MENU SECTION ================= -->
+
+<section class="menu-section" id="menu">
+
+    <div class="section-title">
+        <p>OUR MENU</p>
+        <h2>Choose Your Favorite</h2>
+        <span>Fresh ingredients, bold flavors, and dishes made with passion.</span>
+        <div class="title-line"></div>
+    </div>
+
+    <!-- SEARCH AND CATEGORY FILTERS -->
+
+    <div class="extra-menu-tools" id="extraMenuTools">
+
+        <label class="extra-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+                id="dishSearch"
+                type="search"
+                placeholder="Search dishes..."
+                aria-label="Search dishes"
+            >
+        </label>
+
+        <div class="extra-filter-buttons" id="extraFilters">
+
+            <button type="button" class="extra-filter active" data-filter="all">
+                All
+            </button>
+
+            <button type="button" class="extra-filter" data-filter="starters">
+                Starters
+            </button>
+
+            <button type="button" class="extra-filter" data-filter="burgers">
+                Burgers
+            </button>
+
+            <button type="button" class="extra-filter" data-filter="pizza">
+                Pizza
+            </button>
+
+            <button type="button" class="extra-filter" data-filter="sushi">
+                Sushi
+            </button>
+
+            <button type="button" class="extra-filter" data-filter="mains">
+                Main Dishes
+            </button>
+
+            <button type="button" class="extra-filter" data-filter="desserts">
+                Desserts
+            </button>
+
+            <button type="button" class="extra-filter" data-filter="drinks">
+                Drinks
+            </button>
+
+        </div>
+    </div>
+
+
+    <!-- ================= STARTERS ================= -->
+
+    <div class="menu-category">
+
+        <div class="category-header">
+            <div class="category-title">
+                <span class="category-icon">🍴</span>
+                <h3>Starters</h3>
+            </div>
+
+            <a href="#menu">View All →</a>
+        </div>
+
+        <div class="menu-items">
+
+            <div class="menu-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&w=600&q=80"
+                    alt="Bruschetta"
+                >
+
+                <div class="menu-info">
+
+                    <div class="item-name">
+                        <h4>Classic Bruschetta</h4>
+                        <strong>$8</strong>
+                    </div>
+
+                    <p>
+                        Fresh tomatoes, basil, garlic, olive oil and toasted bread.
+                    </p>
+
+                </div>
+            </div>
+
+
+            <div class="menu-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80"
+                    alt="Spring Rolls"
+                >
+
+                <div class="menu-info">
+
+                    <div class="item-name">
+                        <h4>Crispy Spring Rolls</h4>
+                        <strong>$9</strong>
+                    </div>
+
+                    <p>
+                        Crispy rolls filled with fresh vegetables and served with sauce.
+                    </p>
+
+                </div>
+            </div>
+
+
+            <div class="menu-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=600&q=80"
+                    alt="Chicken Wings"
+                >
+
+                <div class="menu-info">
+
+                    <div class="item-name">
+                        <h4>Spicy Chicken Wings</h4>
+                        <strong>$11</strong>
+                    </div>
+
+                    <p>
+                        Crispy chicken wings tossed in our signature spicy sauce.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ================= BURGERS ================= -->
+
+    <div class="menu-category">
+
+        <div class="category-header">
+            <div class="category-title">
+                <span class="category-icon">🍔</span>
+                <h3>Burgers</h3>
+            </div>
+
+            <a href="#menu">View All →</a>
+        </div>
+
+        <div class="menu-items">
+
+            <div class="menu-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
+                    alt="Classic Beef Burger"
+                >
+
+                <div class="menu-info">
+
+                    <div class="item-name">
+                        <h4>Classic Beef Burger</h4>
+                        <strong>$12</strong>
+                    </div>
+
+                    <p>
+                        Beef patty, lettuce, tomato, onion and our special sauce.
+                    </p>
+
+                </div>
+            </div>
+
+
+            <div class="menu-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=600&q=80"
+                    alt="Double Cheese Burger"
+                >
+
+                <div class="menu-info">
+
+                    <div class="item-name">
+                        <h4>Double Cheese Burger</h4>
+                        <strong>$15</strong>
+                    </div>
+
+                    <p>
+                        Two beef patties, double cheese, caramelized onions and sauce.
+                    </p>
+
+                </div>
+            </div>
+
+
+            <div class="menu-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=600&q=80"
+                    alt="Crispy Chicken Burger"
+                >
+
+                <div class="menu-info">
+
+                    <div class="item-name">
+                        <h4>Crispy Chicken Burger</h4>
+                        <strong>$13</strong>
+                    </div>
+
+                    <p>
+                        Crispy chicken breast, lettuce, pickles and creamy sauce.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ================= PIZZA ================= -->
+
+    <div class="menu-category">
+
+        <div class="category-header">
+            <div class="category-title">
+                <span class="category-icon">🍕</span>
+                <h3>Pizza</h3>
+            </div>
+
+            <a href="#menu">View All →</a>
+        </div>
+
+        <div class="menu-items">
+
+            <div class="menu-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=80"
+                    alt="Margherita Pizza"
+                >
+
+                <div class="menu-info">
+
+                    <div class="item-name">
+                        <h4>Margherita</h4>
+                        <strong>$11</strong>
+                    </div>
+
+                    <p>
+                        Tomato sauce, mozzarella, fresh basil and olive oil.
+                    </p>
+
+                </div>
+            </div>
+
+
+            <div class="menu-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=600&q=80"
+                    alt="Pepperoni Pizza"
+                >
+
+                <div class="menu-info">
+
+                    <div class="item-name">
+                        <h4>Pepperoni</h4>
+                        <strong>$14</strong>
+                    </div>
+
+                    <p>
+                        Classic tomato sauce, mozzarella and premium pepperoni.
+                    </p>
+
+                </div>
+            </div>
+
+
+            <div class="menu-item">
+
+                <img
+                    src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=600&q=80"
+                    alt="Four Cheese Pizza"
+                >
+
+                <div class="menu-info">
+
+                    <div class="item-name">
+                        <h4>Four Cheese</h4>
+                        <strong>$15</strong>
+                    </div>
+
+                    <p>
+                        A rich blend of four cheeses with a crispy golden crust.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <!-- ================= SUSHI ================= -->
+
+    <div class="menu-category">
+
+        <div class="category-header">
+            <div class="category-title">
+                <span class="category-icon">🍣</span>
+                <h3>Sushi</h3>
+            </div>
+
+            <a href="#menu">View All →</a>
+        </div>
+
+        <div class="menu-items">
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=600&q=80" alt="California Roll">
+
+                <div class="menu-info">
+                    <div class="item-name">
+                        <h4>California Roll</h4>
+                        <strong>$14</strong>
+                    </div>
+
+                    <p>
+                        Crab, avocado and cucumber wrapped in seasoned sushi rice.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=600&q=80" alt="Salmon Roll">
+
+                <div class="menu-info">
+                    <div class="item-name">
+                        <h4>Salmon Roll</h4>
+                        <strong>$16</strong>
+                    </div>
+
+                    <p>
+                        Fresh salmon, avocado and cucumber with a delicate finish.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1563612116625-3012372fccce?auto=format&fit=crop&w=600&q=80" alt="Sushi Selection">
+
+                <div class="menu-info">
+                    <div class="item-name">
+                        <h4>Chef's Sushi Selection</h4>
+                        <strong>$20</strong>
+                    </div>
+
+                    <p>
+                        A selection of our chef's favorite sushi pieces and rolls.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ================= MAIN DISHES ================= -->
+
+    <div class="menu-category">
+
+        <div class="category-header">
+            <div class="category-title">
+                <span class="category-icon">🥩</span>
+                <h3>Main Dishes</h3>
+            </div>
+
+            <a href="#menu">View All →</a>
+        </div>
+
+        <div class="menu-items">
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80" alt="Grilled Chicken">
+
+                <div class="menu-info">
+                    <div class="item-name">
+                        <h4>Grilled Chicken</h4>
+                        <strong>$18</strong>
+                    </div>
+
+                    <p>
+                        Juicy grilled chicken served with seasonal vegetables.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Beef Steak">
+
+                <div class="menu-info">
+                    <div class="item-name">
+                        <h4>Premium Beef Steak</h4>
+                        <strong>$25</strong>
+                    </div>
+
+                    <p>
+                        Tender grilled beef steak served with our house sides.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80" alt="Grilled Salmon">
+
+                <div class="menu-info">
+                    <div class="item-name">
+                        <h4>Grilled Salmon</h4>
+                        <strong>$23</strong>
+                    </div>
+
+                    <p>
+                        Fresh salmon fillet with vegetables and lemon butter.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ================= DESSERTS ================= -->
+
+    <div class="menu-category">
+
+        <div class="category-header">
+            <div class="category-title">
+                <span class="category-icon">🍰</span>
+                <h3>Desserts</h3>
+            </div>
+
+            <a href="#menu">View All →</a>
+        </div>
+
+        <div class="menu-items">
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Chocolate Cake">
+
+                <div class="menu-info">
+                    <div class="item-name">
+                        <h4>Chocolate Cake</h4>
+                        <strong>$7</strong>
+                    </div>
+
+                    <p>
+                        Rich chocolate cake finished with a smooth chocolate glaze.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" alt="Cheesecake">
+
+                <div class="menu-info">
+                    <div class="item-name">
+                        <h4>Classic Cheesecake</h4>
+                        <strong>$8</strong>
+                    </div>
+
+                    <p>
+                        Creamy cheesecake served with fresh berries.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=1200" alt="Ice Cream">
+
+                <div class="menu-info">
+                    <div class="item-name">
+                        <h4>Premium Ice Cream</h4>
+                        <strong>$6</strong>
+                    </div>
+
+                    <p>
+                        Three scoops of your favorite flavors with toppings.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ================= DRINKS ================= -->
+
+    <div class="menu-category">
+
+        <div class="category-header">
+            <div class="category-title">
+                <span class="category-icon">🥤</span>
+                <h3>Drinks</h3>
+            </div>
+
+            <a href="#menu">View All →</a>
+        </div>
+
+        <div class="menu-items">
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=600&q=80" alt="Fresh Juice">
+
+                <div class="menu-info">
+                    <div class="item-name">
+                        <h4>Fresh Juice</h4>
+                        <strong>$5</strong>
+                    </div>
+
+                    <p>
+                        Freshly squeezed seasonal fruit juice.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Coffee">
+
+                <div class="menu-info">
+                    <div class="item-name">
+                        <h4>Specialty Coffee</h4>
+                        <strong>$4</strong>
+                    </div>
+
+                    <p>
+                        Freshly brewed premium coffee prepared by our baristas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=600&q=80" alt="Signature Drink">
+
+                <div class="menu-info">
+                    <div class="item-name">
+                        <h4>Signature Drink</h4>
+                        <strong>$7</strong>
+                    </div>
+
+                    <p>
+                        A refreshing house special made with fresh ingredients.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section" id="about">
+
+  <div class="about-image">
+    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200" alt="About Us">
+    </div>
+
+    <div class="about-content">
+        <p class="section-label">ABOUT US</p>
+
+        <h2>Made With Passion,<br>Served With Love.</h2>
+
+        <p>
+            We believe great food brings people together.
+            Our kitchen combines fresh ingredients, quality
+            products, and creative flavors to create memorable
+            dining experiences.
+        </p>
+
+        <p>
+            From a quick lunch to a special dinner, every dish
+            is prepared with care and served with attention to detail.
+        </p>
+
+        <a href="#contact" class="button primary">Learn More</a>
+    </div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery-section" id="gallery">
+
+    <div class="section-title">
+        <p>OUR GALLERY</p>
+        <h2>A Taste of Our Kitchen</h2>
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80" alt="Pizza">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="Burger">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=900&q=80" alt="Sushi">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Steak">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=900&q=80" alt="Restaurant food">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=80" alt="Restaurant interior">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= RESERVATION ================= -->
+
+<section class="reservation-section" id="reservation">
+
+    <div class="section-title">
+        <p>RESERVATION</p>
+        <h2>Book Your Table</h2>
+    </div>
+
+    <form class="reservation-form">
+
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Your phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="time">Time</label>
+            <input type="time" id="time" required>
+        </div>
+
+        <div class="form-group">
+            <label for="guests">Guests</label>
+            <select id="guests" required>
+                <option value="">Select guests</option>
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4 Guests</option>
+                <option>5+ Guests</option>
+            </select>
+        </div>
+
+        <div class="form-group full-width">
+            <label for="message">Special Request</label>
+            <textarea id="message" rows="5" placeholder="Any special request?"></textarea>
+        </div>
+
+        <button type="submit" class="button primary">
+            Book Now
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="section-title">
+        <p>CONTACT US</p>
+        <h2>Come Visit Us</h2>
+        <span>We would love to welcome you.</span>
+    </div>
+
+    <div class="contact-content">
+
+        <div class="contact-info">
+
+            <div class="contact-card">
+                <span class="contact-icon">📍</span>
+                <h3>Location</h3>
+                <p>Beirut, Lebanon</p>
+            </div>
+
+            <div class="contact-card">
+                <span class="contact-icon">📞</span>
+                <h3>Phone</h3>
+                <p>+961 81 832 518</p>
+            </div>
+
+            <div class="contact-card">
+                <span class="contact-icon">🕒</span>
+                <h3>Opening Hours</h3>
+                <p>Monday - Sunday</p>
+                <p>11:00 AM - 11:00 PM</p>
+            </div>
+
+            <div class="contact-card">
+                <span class="contact-icon">✉️</span>
+                <h3>Email</h3>
+                <p>hello@restaurant.com</p>
+            </div>
+
+        </div>
+
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps?q=Beirut,Lebanon&output=embed"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a
+    href="https://wa.me/96181832518"
+    class="whatsapp-button"
+    target="_blank"
+    rel="noopener"
+    aria-label="Contact us on WhatsApp">
+    WhatsApp
+</a>
+
+
+<!-- ================= ORDER ================= -->
+
+<section class="order-section" id="order">
+
+    <div class="order-content">
+
+        <div>
+            <p class="section-label">ORDER ONLINE</p>
+
+            <h2>
+                Your Favorite Food,
+                <br>
+                Delivered To You.
+            </h2>
+
+            <p>
+                Order your favorite dishes online and enjoy
+                our food wherever you are.
+            </p>
+        </div>
+
+        <div class="order-buttons">
+
+            <a
+                href="https://wa.me/96181832518"
+                target="_blank"
+                rel="noopener"
+                class="button primary">
+                Order on WhatsApp
+            </a>
+
+            <a href="#menu" class="button secondary">
+                View Menu
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <h3>TASTE</h3>
+            <p>
+                Great food, great moments, unforgettable memories.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reservation">Reservation</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-social">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">WhatsApp</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 TASTE Restaurant. All rights reserved.</p>
+    </div>
+
+</footer>
+
+
+<!-- ================= DISH DETAILS MODAL ================= -->
+
+<div class="dish-modal-overlay" id="dishModal" aria-hidden="true">
+
+    <div class="dish-modal" role="dialog" aria-modal="true">
+
+        <button type="button" class="dish-modal-close" id="dishModalClose">
+            &times;
+        </button>
+
+        <div class="dish-modal-image-wrap">
+            <img id="dishModalImage" src="" alt="Selected dish">
+        </div>
+
+        <div class="dish-modal-content">
+
+            <span class="dish-modal-category" id="dishModalCategory">
+                MENU ITEM
+            </span>
+
+            <h2 id="dishModalTitle">Dish name</h2>
+
+            <p id="dishModalDescription"></p>
+
+            <div class="dish-modal-facts">
+
+                <div>
+                    <i class="fa-solid fa-fire"></i>
+                    <strong id="dishModalCalories">0 kcal</strong>
+                    <span>Calories</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-tag"></i>
+                    <strong id="dishModalPrice">$0</strong>
+                    <span>Price</span>
+                </div>
+
+            </div>
+
+            <h3>Ingredients</h3>
+
+            <ul id="dishModalIngredients"></ul>
+
+            <p class="dish-modal-disclaimer">
+                Calories and ingredients are estimates for demonstration.
+                Confirm exact details with the restaurant.
+            </p>
+
+            <button type="button" class="dish-modal-add" id="dishModalAdd">
+                Add to cart
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= FLOATING CART ================= -->
+
+<button
+    type="button"
+    class="extra-cart-float"
+    id="extraCartToggle"
+    aria-label="Open shopping cart">
+
+    <i class="fa-solid fa-bag-shopping"></i>
+
+    <span>Cart</span>
+
+    <b id="extraCartFloatCount">0</b>
+
+</button>
+
+
+<!-- ================= CART DRAWER ================= -->
+
+<div class="extra-cart-backdrop" id="extraCartBackdrop"></div>
+
+<aside
+    class="extra-cart"
+    id="extraCart"
+    aria-label="Shopping cart"
+    aria-hidden="true">
+
+    <div class="extra-cart-head">
+
+        <div>
+            <span>YOUR ORDER</span>
+            <h2>Your Cart <small id="extraCartCount">0</small></h2>
+        </div>
+
+        <button type="button" id="extraCartClose">&times;</button>
+
+    </div>
+
+    <div class="extra-cart-items" id="extraCartItems">
+        <p class="extra-empty">Your cart is empty.</p>
+    </div>
+
+    <div class="extra-cart-bottom">
+
+        <label for="extraOrderType">Order type</label>
+
+        <select id="extraOrderType">
+            <option value="delivery">Delivery</option>
+            <option value="pickup">Pickup</option>
+        </select>
+
+        <label for="extraAddress">Delivery address</label>
+
+        <input
+            id="extraAddress"
+            type="text"
+            placeholder="Enter your address">
+
+        <div class="extra-total-line">
+            <span>Subtotal</span>
+            <strong id="extraSubtotal">$0.00</strong>
+        </div>
+
+        <div class="extra-total-line">
+            <span>Delivery</span>
+            <strong id="extraDelivery">$3.00</strong>
+        </div>
+
+        <div class="extra-total-line grand">
+            <span>Total</span>
+            <strong id="extraTotal">$3.00</strong>
+        </div>
+
+        <button type="button" id="extraCheckout">
+            Checkout via WhatsApp
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- ================= GALLERY LIGHTBOX ================= -->
+
+<div class="gallery-lightbox" id="extraGalleryLightbox" aria-hidden="true">
+
+    <button type="button" id="extraGalleryClose">
+        &times;
+    </button>
+
+    <img id="extraGalleryImage" src="" alt="Enlarged gallery image">
+
+</div>
+
+
+<div class="extra-toast" id="extraToast" role="status" aria-live="polite"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
